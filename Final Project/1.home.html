@@ -1,0 +1,140 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SISTA </title>
+    <style>
+        .slide {
+position:relative;
+margin:0 auto;
+width: 350px;
+height: 350px;
+overflow:hidden
+}
+
+.slide input {
+display:block;
+position:absolute;
+width: 250px;
+height: 250px;
+left:0;
+top:0;
+opacity:0;
+cursor:pointer;
+margin:0;
+padding:0
+}
+
+.slide img {
+visibility:hidden;
+opacity:0;
+height: 250px;
+position:absolute;
+left:0;
+top:0;
+width: 250px;
+border:10px solid #ddd;
+border-radius:5px;
+transition:all .5s ease-out
+}
+
+.slide input:checked + img {
+visibility:visible;
+opacity:1
+}
+
+.slide input:checked { display:none }
+
+.slide input:nth-child(1) { z-index:13 }
+.slide input:nth-child(3) { z-index:12 }
+.slide input:nth-child(5) { z-index:11 }
+.slide input:nth-child(7) { z-index:10 }
+
+.slide input:nth-child(1):checked ~ input:nth-child(3),
+.slide input:nth-child(3):checked ~ input:nth-child(5),
+.slide input:nth-child(5):checked ~ input:nth-child(7) { z-index:15 }
+    </style>
+</head>
+<body>
+    <header>
+    <center><h1> Sistem Informasi Seminar Tugas Akhir - SISTA </h1></center>
+        <nav>
+            <div>
+                <a href="1.home.html"> Home </a> | 
+                <a href="4.detail jadwal.html"> Jadwal </a> |
+                <a href="6.form daftar seminar TA.html"> Daftar Seminar </a> |
+                <a href="#"> About </a> | 
+                <a href="2.Login.html"> Login </a>
+            </div>         
+        </nav>
+    </header>
+
+    <div>
+        <p> Alur Seminar/Tugas Akhir </p>
+            <div class="slide">
+                <input type='radio' name='radio-set' checked='checked' />
+                <img src="dist/img/b1.png">
+              
+                <input type='radio' name='radio-set' />
+                <img src="dist/img/b2.png">
+              
+                <input type='radio' name='radio-set' />
+                <img src="dist/img/b3.jpg">
+              
+                <input type='radio' name='radio-set' />
+                <img src="dist/img/b4.jpg">
+
+                <input type='radio' name='radio-set' />
+                <img src="dist/img/b5.jpg">
+              </div>
+    </div>
+        
+    <div>
+        <p> Jadwal Seminar/Sidang Tugas Akhir Mahasiswa</p>
+        <table border="2">
+            <tr bgcolor="cyan">
+                <td> No. </td>
+                <td> NIM </td>
+                <td> Mahasiswa/i </td>
+                <td> Seminar </td>
+                <td> Waktu </td>
+                <td> Ruangan </td>
+                <td> Peserta </td>
+            </tr>
+
+            <tr bgcolor="darkgray">
+                <td> 1 </td>
+                <td> 0102001 </td>
+                <td> Diego Armando </td>
+                <td> Proposal </td>
+                <td> 10.00 04-01-2021 </td>
+                <td> Online </td>
+                <td> 10 (view) </td>
+            </tr>
+
+            <tr>
+                <td> 2 </td>
+                <td> 0102002 </td>
+                <td> Ahmad Budiman </td>
+                <td> Seminar Hasil </td>
+                <td> 10.00 04-01-2021 </td>
+                <td> Online </td>
+                <td> 10 (view) </td>
+            </tr>
+
+            <tr bgcolor="darkgray">
+                <td> 3 </td>
+                <td> 0102021 </td>
+                <td> Fredelina Putri </td>
+                <td> Seminar Akhir </td>
+                <td> 10.00 04-01-2021 </td>
+                <td> B2304 </td>
+                <td> 0 (view) </td>
+            </tr>
+        </table>
+    </div>
+    
+    <footer style="background-color: darkgrey; text-align: center; position: relative;  bottom: 0px; width: 100%;"> Develop By Mahasiswa STT-NF @2021 &copy; Copyright </footer>
+</body>
+</html>

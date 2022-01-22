@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title> Login SISTA </title>
+        <style>
+            *{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px 25px;
+    width: 300px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(255,255,255,.3);
+}
+.container h1{
+    text-align: left;
+    color: black;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    border-bottom: 4px solid black;
+}
+.container label{
+    text-align: left;
+    color: black;
+}
+.container form input{
+    width: calc(100% - 20px);
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+    color: black;
+    font-size: 20px;
+}
+.container form button{
+    width: 100%;
+    padding: 5px 0;
+    border: none;
+    background-color: solid black;
+    font-size: 18px;
+    color: black;
+}
+
+.container form p{
+    text-align: center;
+}
+
+a{text-decoration: none; font-size: 20px;font-family: sans-serif;padding: 14px 10px;}
+ul{padding: 14px; }
+li{list-style: none; display: inline; text-align: right;}
+li a{background: transparent; color: black;}
+li a:hover{background: #4da4ff; color:#fff;}
+.navi{display: flex; text-align: right; justify-content:space-between; padding: 20px 50px 20px 50px; border-bottom: 3px solid #303030;}
+    </style>
+    </head>
+   
+    <body>
+
+        <header>
+            <nav class="navi">
+                <div>
+                    <img src="dist/img/logo.png" alt="" width="50px" height="50px"><br> SISTA
+                </div>
+                <div>
+                <ul>
+                <li><a href="1.home.html"> Home </a> | </li>
+                <li><a href="4.detail jadwal.html"> Jadwal </a> | </li>
+                <li><a href="5.daftar peserta.html"> Daftar Seminar </a> | </li>
+                <li><a href="#"> About </a></li>
+                </ul>
+                </div>
+                <hr>
+            </nav>
+        </header>
+
+        <div class="container">
+          <h1> Login </h1>
+            <form>
+                <label> Username </label><br>
+                <input type="text" id="username"><br>
+                <label> Password </label><br>
+                <input type="password" id="password"><br>
+                <button id="login"> SignIn </button>
+                <p><a href="3.Registrasi.html"> Registrasi User </a></p>
+            </form>
+        </div>
+        
+        <footer style="background-color: darkgrey; text-align: center; position: absolute;  bottom: 0px; width: 100%;"> Develop By Mahasiswa STT-NF @2021 &copy; Copyright </footer>
+    
+    <script>
+        document.querySelector("#login").addEventListener("click", function(event) {
+    event.preventDefault()
+
+    validate();
+});
+
+
+function validate() {
+    let name = document.querySelector('#username').value
+    let password = document.querySelector('#password').value
+
+    if (name == "admin" && password == 'admin') {
+        window.location = "8.form daftar seminar TA admin.html";
+        alert('sukses')
+        return false;
+
+    } else {
+        alert('Yang anda masukkan salah');
+        return false;
+    }
+}
+    </script>
+        
+    </body>
+</html>

@@ -1,0 +1,27 @@
+.bg {
+    background-color: rgb(244, 244, 255);
+}
+
+.mgn {
+    margin: 0.5em;
+}
+
+.text-sz-sm {
+    font-size: small;
+}
+
+.text-sz-md {
+    font-size: medium;
+}
+
+.img-wd {
+    width: 200px;
+}
+
+.pd {
+    padding: 0.2em;
+}
+
+.sd-bar {
+    width: 100%; max-width: rem; padding: 2rem;
+}

@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title> SISTA </title>
+</head>
+<body>
+    <header>
+        <center><h1> Sistem Informasi Seminar Tugas Akhir - SISTA </h1></center>
+            <nav>
+                <div style="text-align: right;">
+                    <a href="1.home.html"> Home </a> &#10148 
+                    <a href="4.detail jadwal.html"> Jadwal </a> &#10148
+                    <a href="4.detail jadwal.html"> Detail Jadwal </a> &#10148
+                    <p> Daftar Peserta </p>
+                </div>         
+            </nav>
+    </header>
+
+    <p> Mahasiswa Seminar : Diego Armando (0102002) </p>
+    <p> Judul : Rancang Bangun Aplikasi Seminar Tugas Akhir Berbasis Web Menggunakan MVC Framework </p>
+    <p> Waktu : Senin, 4 Januari 2021, 10:00 </p>
+
+    <fieldset>
+        <legend> Form Peserta Seminar </legend>
+        
+          <div class="form-group row">
+            <label for="NIM" class="col-2 col-form-label">NIM</label> 
+            <div class="col-10">
+              <input id="NIM" name="NIM" type="text" class="form-control">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="n1" class="col-2 col-form-label">Nama</label> 
+            <div class="col-10">
+              <input id="n1" name="n1" type="text" class="form-control">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="p1" class="col-2 col-form-label">Prodi</label> 
+            <div class="col-10">
+              <select id="p1" name="p1" class="custom-select">
+                <option value="s1">Sistem Informasi</option>
+                <option value="t1">Tekhnik Informasi</option>
+                <option value="b6">Bisnis Digital</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-2">Program</label> 
+            <div class="col-10">
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input name="p0" id="p0_0" type="checkbox" class="custom-control-input" value="d3"> 
+                <label for="p0_0" class="custom-control-label">D3</label>
+              </div>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input name="p0" id="p0_1" type="checkbox" class="custom-control-input" value="sr"> 
+                <label for="p0_1" class="custom-control-label">S1 Reguler</label>
+              </div>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input name="p0" id="p0_2" type="checkbox" class="custom-control-input" value="sft"> 
+                <label for="p0_2" class="custom-control-label">S1 Fast Trackt</label>
+              </div>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input name="p0" id="p0_3" type="checkbox" class="custom-control-input" value="s2"> 
+                <label for="p0_3" class="custom-control-label">S2</label>
+              </div>
+            </div>
+          </div> 
+          <div class="form-group row">
+            <div class="offset-2 col-10">
+              <button name="submit" type="submit" class="btn btn-primary">Daftar</button>
+            </div>
+          </div>
+    </fieldset>
+
+    <footer style="background-color: darkgrey; text-align: center; position: absolute;  bottom: 0px; width: 100%;"> Develop By Mahasiswa STT-NF @2021 &copy; Copyright </footer>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SISTA </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <center><h1> Sistem Informasi Seminar Tugas Akhir - SISTA </h1></center>
+            <nav>
+                <div>
+                    <a href="1.home.html"> Home </a> | 
+                    <a href="4.detail jadwal.html"> Jadwal </a> |
+                    <a href="6.form daftar seminar TA.html"> Daftar Seminar </a> |
+                    <a href="2.Login.html"> Login </a>
+                </div>         
+            </nav>
+    </header>
+
+    <h5> Pendaftaran Seminar berlaku untuk mahasiswa yang telah mendapatkan persetujuan dari Pembimbing TA </h5>
+
+    <fieldset>
+        <legend> Form Daftar Seminar TA </legend>
+        
+    <div class="row">
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-body">
+                <div class="form-group row">
+                    <label for="nim" class="col-2 col-form-label">NIM</label> 
+                    <div class="col-10">
+                      <input id="nim" name="nim" type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-2 col-form-label" for="nama">Nama</label> 
+                    <div class="col-10">
+                      <input id="nama" name="nama" type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="prodi" class="col-2 col-form-label">Prodi</label> 
+                    <div class="col-10">
+                      <select id="prodi" name="prodi" class="custom-select">
+                        <option value="SI">Sistem Informasi</option>
+                        <option value="TI">Teknik Informasi</option>
+                        <option value="BG">Bisnis Digital</option>
+                      </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-2 col-form-label" for="ts">Tanggal Seminar</label> 
+                    <div class="col-10">
+                      <div class="input-group">
+                        <input id="ts" name="ts" type="date" class="form-control"> 
+                      </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="js" class="col-2 col-form-label">Jam Seminar</label> 
+                    <div class="col-10">
+                      <input id="js" name="js" type="time" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="ruangan" class="col-2 col-form-label">Ruangan</label> 
+                    <div class="col-10">
+                      <input id="ruangan" name="ruangan" type="text" class="form-control">
+                    </div>
+                </div> 
+                <div class="form-group row">
+                    <div class="offset-2 col-10">
+                      <button name="submit" type="submit" class="btn btn-primary">Daftar</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <div class="form-group row">
+                        <label for="jta" class="col-3 col-form-label">Judul TA</label> 
+                        <div class="col-9">
+                          <textarea id="jta" name="jta" cols="40" rows="3" class="form-control"></textarea>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="seminar" class="col-3 col-form-label">Seminar</label> 
+                        <div class="col-9">
+                          <select id="seminar" name="seminar" class="custom-select">
+                            <option value="P">Proposal</option>
+                            <option value="SH">Seminar Hasil</option>
+                            <option value="SA">Seminar Akhir</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="pembimbing" class="col-3 col-form-label">Pembimbing</label> 
+                        <div class="col-9">
+                          <select id="pembimbing" name="pembimbing" class="custom-select">
+                            <option value="SM">Sirojul Munir S.SI, M.KOM</option>
+                            <option value="AR">Ahmad Rio M.SI</option>
+                            <option value="ARM">Amalia Rahmah M.T</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="penguji1" class="col-3 col-form-label">Penguji 1</label> 
+                        <div class="col-9">
+                          <select id="penguji1" name="penguji1" class="custom-select">
+                            <option value="AR">Ahmad Rio M.SI</option>
+                            <option value="ARM">Amalia Rahmah M.T</option>
+                            <option value="SM">Sirojul Munir S.SI, M.KOM</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="penguji2" class="col-3 col-form-label">Penguji 2</label> 
+                        <div class="col-9">
+                          <select id="penguji2" name="penguji2" class="custom-select">
+                            <option value="ARM">Amalia Rahmah M.T</option>
+                            <option value="SM">Sirojul Munir S.SI, M.KOM</option>
+                            <option value="AR">Ahmad Rio M.SI</option>
+                          </select>
+                        </div>
+                      </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    </fieldset>
+
+    <footer style="background-color: darkgrey; text-align: center; position: absolute;  bottom: 0px; width: 100%;"> Develop By Mahasiswa STT-NF @2021 &copy; Copyright </footer>
+</body>
+</html>
